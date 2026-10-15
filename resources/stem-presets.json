@@ -1,0 +1,3851 @@
+{
+  "Hip-Hop": {
+    "Trap": {
+      "baseline_intensity": "Medium-High",
+      "description": "Filter, echo, reverb and volume changes at selected section and phrase endings. The kick keeps its existing settings.",
+      "roles": {
+        "hat": [
+          {
+            "name": "Drum filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "intro",
+                "verse",
+                "pre-chorus",
+                "bridge"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 40,
+            "max_delta": 40,
+            "limits": {
+              "min": 0,
+              "max": 40,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "snare": [
+          {
+            "name": "Drum filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "intro",
+                "verse",
+                "pre-chorus",
+                "bridge"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 40,
+            "max_delta": 40,
+            "limits": {
+              "min": 0,
+              "max": 40,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Brief reverb before section change",
+            "plugin": "Fruity Reeverb 2",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "verse",
+                "chorus",
+                "drop",
+                "bridge",
+                "outro"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 25,
+            "max_delta": 30,
+            "limits": {
+              "min": 0,
+              "max": 30,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          }
+        ],
+        "clap": [
+          {
+            "name": "Drum filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "intro",
+                "verse",
+                "pre-chorus",
+                "bridge"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 40,
+            "max_delta": 40,
+            "limits": {
+              "min": 0,
+              "max": 40,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Brief reverb before section change",
+            "plugin": "Fruity Reeverb 2",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "verse",
+                "chorus",
+                "drop",
+                "bridge",
+                "outro"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 25,
+            "max_delta": 30,
+            "limits": {
+              "min": 0,
+              "max": 30,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          }
+        ],
+        "tom": [
+          {
+            "name": "Drum filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "intro",
+                "verse",
+                "pre-chorus",
+                "bridge"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 40,
+            "max_delta": 40,
+            "limits": {
+              "min": 0,
+              "max": 40,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Brief reverb before section change",
+            "plugin": "Fruity Reeverb 2",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "verse",
+                "chorus",
+                "drop",
+                "bridge",
+                "outro"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 25,
+            "max_delta": 30,
+            "limits": {
+              "min": 0,
+              "max": 30,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          }
+        ],
+        "perc": [
+          {
+            "name": "Drum filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "intro",
+                "verse",
+                "pre-chorus",
+                "bridge"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 40,
+            "max_delta": 40,
+            "limits": {
+              "min": 0,
+              "max": 40,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "ride": [
+          {
+            "name": "Drum filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "intro",
+                "verse",
+                "pre-chorus",
+                "bridge"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 40,
+            "max_delta": 40,
+            "limits": {
+              "min": 0,
+              "max": 40,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "crash": [
+          {
+            "name": "Drum filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "intro",
+                "verse",
+                "pre-chorus",
+                "bridge"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 40,
+            "max_delta": 40,
+            "limits": {
+              "min": 0,
+              "max": 40,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "keys": [
+          {
+            "name": "Instrument filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "intro",
+                "verse",
+                "pre-chorus",
+                "bridge"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 65,
+            "max_delta": 65,
+            "limits": {
+              "min": 0,
+              "max": 65,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Brief echo at phrase ending",
+            "plugin": "Fruity Delay 3",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "phrase_end",
+              "sections": [
+                "verse",
+                "chorus",
+                "drop",
+                "bridge"
+              ],
+              "min_spacing_bars": 2,
+              "max_per_section": 2
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": 30,
+            "max_delta": 34,
+            "limits": {
+              "min": 0,
+              "max": 34,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Lower instrument volume during verse",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse"
+              ]
+            },
+            "shape": "hold",
+            "length": {
+              "value": 8,
+              "unit": "bars"
+            },
+            "start_value": -2.2,
+            "end_value": -2.2,
+            "max_delta": 3,
+            "limits": {
+              "min": -12,
+              "max": 0
+            }
+          }
+        ],
+        "guitar": [
+          {
+            "name": "Instrument filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "intro",
+                "verse",
+                "pre-chorus",
+                "bridge"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 65,
+            "max_delta": 65,
+            "limits": {
+              "min": 0,
+              "max": 65,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Brief echo at phrase ending",
+            "plugin": "Fruity Delay 3",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "phrase_end",
+              "sections": [
+                "verse",
+                "chorus",
+                "drop",
+                "bridge"
+              ],
+              "min_spacing_bars": 2,
+              "max_per_section": 2
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": 30,
+            "max_delta": 34,
+            "limits": {
+              "min": 0,
+              "max": 34,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Lower instrument volume during verse",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse"
+              ]
+            },
+            "shape": "hold",
+            "length": {
+              "value": 8,
+              "unit": "bars"
+            },
+            "start_value": -2.2,
+            "end_value": -2.2,
+            "max_delta": 3,
+            "limits": {
+              "min": -12,
+              "max": 0
+            }
+          }
+        ],
+        "brass": [
+          {
+            "name": "Instrument filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "intro",
+                "verse",
+                "pre-chorus",
+                "bridge"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 65,
+            "max_delta": 65,
+            "limits": {
+              "min": 0,
+              "max": 65,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Lower instrument volume during verse",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse"
+              ]
+            },
+            "shape": "hold",
+            "length": {
+              "value": 8,
+              "unit": "bars"
+            },
+            "start_value": -2.2,
+            "end_value": -2.2,
+            "max_delta": 3,
+            "limits": {
+              "min": -12,
+              "max": 0
+            }
+          }
+        ],
+        "pads": [
+          {
+            "name": "Instrument filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "intro",
+                "verse",
+                "pre-chorus",
+                "bridge"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 65,
+            "max_delta": 65,
+            "limits": {
+              "min": 0,
+              "max": 65,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Lower instrument volume during verse",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse"
+              ]
+            },
+            "shape": "hold",
+            "length": {
+              "value": 8,
+              "unit": "bars"
+            },
+            "start_value": -2.2,
+            "end_value": -2.2,
+            "max_delta": 3,
+            "limits": {
+              "min": -12,
+              "max": 0
+            }
+          }
+        ],
+        "synth": [
+          {
+            "name": "Instrument filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "intro",
+                "verse",
+                "pre-chorus",
+                "bridge"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 65,
+            "max_delta": 65,
+            "limits": {
+              "min": 0,
+              "max": 65,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Lower instrument volume during verse",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse"
+              ]
+            },
+            "shape": "hold",
+            "length": {
+              "value": 8,
+              "unit": "bars"
+            },
+            "start_value": -2.2,
+            "end_value": -2.2,
+            "max_delta": 3,
+            "limits": {
+              "min": -12,
+              "max": 0
+            }
+          }
+        ],
+        "bass": [
+          {
+            "name": "Lower bass volume before main section",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "intro",
+                "verse",
+                "pre-chorus",
+                "bridge"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 1,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": -4.5,
+            "max_delta": 6,
+            "limits": {
+              "min": -12,
+              "max": 0
+            }
+          }
+        ],
+        "vocals": [
+          {
+            "name": "Brief echo at phrase ending",
+            "plugin": "Fruity Delay 3",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "phrase_end",
+              "sections": [
+                "verse",
+                "chorus",
+                "drop",
+                "bridge"
+              ],
+              "min_spacing_bars": 2,
+              "max_per_section": 2
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": 30,
+            "max_delta": 34,
+            "limits": {
+              "min": 0,
+              "max": 34,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          }
+        ]
+      }
+    },
+    "Boom Bap": {
+      "baseline_intensity": "Medium-Low",
+      "description": "Volume changes around verse and chorus boundaries, with brief snare reverb and filtering during verses.",
+      "roles": {
+        "keys": [
+          {
+            "name": "Restore instrument volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": -2,
+            "end_value": 0,
+            "max_delta": 2,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          },
+          {
+            "name": "Instrument filter amount during verse",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse"
+              ]
+            },
+            "shape": "hold",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 30,
+            "end_value": 30,
+            "max_delta": 30,
+            "limits": {
+              "min": 0,
+              "max": 30,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "guitar": [
+          {
+            "name": "Restore instrument volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": -2,
+            "end_value": 0,
+            "max_delta": 2,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "snare": [
+          {
+            "name": "Brief snare reverb at chorus start",
+            "plugin": "Fruity Reeverb 2",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 13.5,
+            "max_delta": 13.5,
+            "limits": {
+              "min": 0,
+              "max": 13.5,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          }
+        ],
+        "synth": [
+          {
+            "name": "Instrument filter amount during verse",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse"
+              ]
+            },
+            "shape": "hold",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 30,
+            "end_value": 30,
+            "max_delta": 30,
+            "limits": {
+              "min": 0,
+              "max": 30,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "bass": [
+          {
+            "name": "Lower bass volume during verse",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse"
+              ]
+            },
+            "shape": "step",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": -1.5,
+            "max_delta": 2,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ]
+      }
+    },
+    "Lo-fi": {
+      "baseline_intensity": "Low",
+      "description": "Low-pass filtering in quieter sections, slow left/right changes, brief keyboard reverb and a volume reduction during the ending.",
+      "roles": {
+        "pads": [
+          {
+            "name": "Move sound left, then return",
+            "plugin": "Mixer",
+            "parameter": "pan_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse",
+                "bridge"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": -8,
+            "max_delta": 8,
+            "limits": {
+              "min": -8,
+              "max": 8
+            }
+          },
+          {
+            "name": "Low-pass filter amount in quieter sections",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "energy",
+              "comparison": "below",
+              "threshold": 0.65
+            },
+            "shape": "hold",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 20,
+            "end_value": 20,
+            "max_delta": 20,
+            "limits": {
+              "min": 0,
+              "max": 20,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Gradually lower volume during ending",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "outro"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": -4,
+            "max_delta": 4,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "keys": [
+          {
+            "name": "Move sound left, then return",
+            "plugin": "Mixer",
+            "parameter": "pan_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse",
+                "bridge"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": -8,
+            "max_delta": 8,
+            "limits": {
+              "min": -8,
+              "max": 8
+            }
+          },
+          {
+            "name": "Brief keyboard reverb before chorus",
+            "plugin": "Fruity Reeverb 2",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 12.0,
+            "max_delta": 12.0,
+            "limits": {
+              "min": 0,
+              "max": 12.0,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Low-pass filter amount in quieter sections",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "energy",
+              "comparison": "below",
+              "threshold": 0.65
+            },
+            "shape": "hold",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 20,
+            "end_value": 20,
+            "max_delta": 20,
+            "limits": {
+              "min": 0,
+              "max": 20,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Gradually lower volume during ending",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "outro"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": -4,
+            "max_delta": 4,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "guitar": [
+          {
+            "name": "Move sound left, then return",
+            "plugin": "Mixer",
+            "parameter": "pan_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse",
+                "bridge"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": -8,
+            "max_delta": 8,
+            "limits": {
+              "min": -8,
+              "max": 8
+            }
+          },
+          {
+            "name": "Low-pass filter amount in quieter sections",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "energy",
+              "comparison": "below",
+              "threshold": 0.65
+            },
+            "shape": "hold",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 20,
+            "end_value": 20,
+            "max_delta": 20,
+            "limits": {
+              "min": 0,
+              "max": 20,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Gradually lower volume during ending",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "outro"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": -4,
+            "max_delta": 4,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "synth": [
+          {
+            "name": "Low-pass filter amount in quieter sections",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "energy",
+              "comparison": "below",
+              "threshold": 0.65
+            },
+            "shape": "hold",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 20,
+            "end_value": 20,
+            "max_delta": 20,
+            "limits": {
+              "min": 0,
+              "max": 20,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Gradually lower volume during ending",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "outro"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": -4,
+            "max_delta": 4,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ]
+      }
+    },
+    "Drill": {
+      "baseline_intensity": "Medium-High",
+      "description": "Brief bass volume reductions, filter amount changes and short vocal echoes around section boundaries.",
+      "roles": {
+        "bass": [
+          {
+            "name": "Briefly lower bass volume before main section",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "step",
+            "length": {
+              "value": 0.5,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": -6,
+            "max_delta": 6,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "hat": [
+          {
+            "name": "Hat filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 55,
+            "max_delta": 55,
+            "limits": {
+              "min": 0,
+              "max": 55,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "keys": [
+          {
+            "name": "Reduce instrument filter amount at section start",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 55,
+            "end_value": 0,
+            "max_delta": 55,
+            "limits": {
+              "min": 0,
+              "max": 55,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "synth": [
+          {
+            "name": "Reduce instrument filter amount at section start",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 55,
+            "end_value": 0,
+            "max_delta": 55,
+            "limits": {
+              "min": 0,
+              "max": 55,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "vocals": [
+          {
+            "name": "Brief vocal echo before verse or chorus",
+            "plugin": "Fruity Delay 3",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "verse",
+                "chorus"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 0.5,
+              "unit": "beats"
+            },
+            "start_value": 0.0,
+            "end_value": 19.5,
+            "max_delta": 19.5,
+            "limits": {
+              "min": 0,
+              "max": 19.5,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "EDM": {
+    "Full song movement": {
+      "engine": "continuous",
+      "baseline_intensity": "High",
+      "description": "Changing filter, volume, pan and effect controls through every active song section.",
+      "settings": {
+        "filter_minimum_percent": 28.0,
+        "filter_maximum_percent": 100.0,
+        "volume_minimum_db": -9.0,
+        "amount_scale": 1.0,
+        "pan_maximum_percent": 24.0,
+        "delay_maximum_percent": 32.0,
+        "reverb_maximum_percent": 30.0,
+        "rhythm_depth_db": 6.0,
+        "rhythm_release_ms": 180.0,
+        "drum_dynamics_amount": 1.0,
+        "phrase_bars": 8
+      }
+    },
+    "House": {
+      "baseline_intensity": "Medium-High",
+      "description": "Gradual filter amount changes before choruses, repeated volume reductions on each beat and brief vocal echoes.",
+      "roles": {
+        "synth": [
+          {
+            "name": "Gradually reduce filter amount before chorus",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "pre-chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 8,
+              "unit": "bars"
+            },
+            "start_value": 65,
+            "end_value": 0,
+            "max_delta": 65,
+            "limits": {
+              "min": 0,
+              "max": 65,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "keys": [
+          {
+            "name": "Gradually reduce filter amount before chorus",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "pre-chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 8,
+              "unit": "bars"
+            },
+            "start_value": 65,
+            "end_value": 0,
+            "max_delta": 65,
+            "limits": {
+              "min": 0,
+              "max": 65,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "pads": [
+          {
+            "name": "Gradually reduce filter amount before chorus",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "pre-chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 8,
+              "unit": "bars"
+            },
+            "start_value": 65,
+            "end_value": 0,
+            "max_delta": 65,
+            "limits": {
+              "min": 0,
+              "max": 65,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Repeated volume reduction on each beat",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "beats"
+            },
+            "start_value": -4,
+            "end_value": 0,
+            "max_delta": 4,
+            "limits": {
+              "min": -12,
+              "max": 3
+            },
+            "repeat_every": {
+              "value": 1,
+              "unit": "beats"
+            }
+          }
+        ],
+        "perc": [
+          {
+            "name": "Percussion high-pass filter amount before chorus",
+            "plugin": "Fruity Filter",
+            "parameter": "highpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "pre-chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 25,
+            "max_delta": 25,
+            "limits": {
+              "min": 0,
+              "max": 25,
+              "drum_max_percent": 25
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "hat": [
+          {
+            "name": "Percussion high-pass filter amount before chorus",
+            "plugin": "Fruity Filter",
+            "parameter": "highpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "pre-chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 25,
+            "max_delta": 25,
+            "limits": {
+              "min": 0,
+              "max": 25,
+              "drum_max_percent": 25
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "bass": [
+          {
+            "name": "Repeated volume reduction on each beat",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "beats"
+            },
+            "start_value": -4,
+            "end_value": 0,
+            "max_delta": 4,
+            "limits": {
+              "min": -12,
+              "max": 3
+            },
+            "repeat_every": {
+              "value": 1,
+              "unit": "beats"
+            }
+          }
+        ],
+        "vocals": [
+          {
+            "name": "Brief vocal echo before main section",
+            "plugin": "Fruity Delay 3",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 27.0,
+            "max_delta": 27.0,
+            "limits": {
+              "min": 0,
+              "max": 27.0,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          }
+        ]
+      }
+    },
+    "Dubstep": {
+      "baseline_intensity": "High",
+      "description": "Bass volume reductions, short filter amount changes and brief echoes around main-section boundaries.",
+      "roles": {
+        "bass": [
+          {
+            "name": "Lower bass volume before main section",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 0.5,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": -10,
+            "max_delta": 10,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "synth": [
+          {
+            "name": "Reduce lead filter amount at section start",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 65,
+            "end_value": 0,
+            "max_delta": 65,
+            "limits": {
+              "min": 0,
+              "max": 65,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "hat": [
+          {
+            "name": "Drum filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 55,
+            "max_delta": 55,
+            "limits": {
+              "min": 0,
+              "max": 55,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "snare": [
+          {
+            "name": "Drum filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 55,
+            "max_delta": 55,
+            "limits": {
+              "min": 0,
+              "max": 55,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "effects": [
+          {
+            "name": "Brief echo before main section",
+            "plugin": "Fruity Delay 3",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 36,
+            "max_delta": 36,
+            "limits": {
+              "min": 0,
+              "max": 36,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          }
+        ]
+      }
+    },
+    "Future Bass": {
+      "baseline_intensity": "Medium-High",
+      "description": "Chord volume increases toward the existing setting, small left/right changes, brief vocal reverb and bass volume reductions.",
+      "roles": {
+        "pads": [
+          {
+            "name": "Restore chord volume before main section",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": -5,
+            "end_value": 0,
+            "max_delta": 5,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          },
+          {
+            "name": "Move sound right during main section, then return",
+            "plugin": "Mixer",
+            "parameter": "pan_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 8,
+            "max_delta": 8,
+            "limits": {
+              "min": -8,
+              "max": 8
+            }
+          }
+        ],
+        "keys": [
+          {
+            "name": "Restore chord volume before main section",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": -5,
+            "end_value": 0,
+            "max_delta": 5,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "synth": [
+          {
+            "name": "Move sound right during main section, then return",
+            "plugin": "Mixer",
+            "parameter": "pan_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 8,
+            "max_delta": 8,
+            "limits": {
+              "min": -8,
+              "max": 8
+            }
+          }
+        ],
+        "vocals": [
+          {
+            "name": "Brief vocal reverb before main section",
+            "plugin": "Fruity Reeverb 2",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 30.0,
+            "max_delta": 30.0,
+            "limits": {
+              "min": 0,
+              "max": 30.0,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          }
+        ],
+        "bass": [
+          {
+            "name": "Briefly lower bass volume before main section",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "step",
+            "length": {
+              "value": 1,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": -4,
+            "max_delta": 4,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ]
+      }
+    },
+    "Techno": {
+      "baseline_intensity": "Medium-High",
+      "description": "Gradual filter amount changes, brief bass volume reductions and echoes before selected section changes.",
+      "roles": {
+        "synth": [
+          {
+            "name": "Gradually reduce filter amount before chorus",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "pre-chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 8,
+              "unit": "bars"
+            },
+            "start_value": 65,
+            "end_value": 0,
+            "max_delta": 65,
+            "limits": {
+              "min": 0,
+              "max": 65,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "hat": [
+          {
+            "name": "Percussion high-pass filter amount before chorus",
+            "plugin": "Fruity Filter",
+            "parameter": "highpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "pre-chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 8,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 25,
+            "max_delta": 25,
+            "limits": {
+              "min": 0,
+              "max": 25,
+              "drum_max_percent": 25
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "perc": [
+          {
+            "name": "Percussion high-pass filter amount before chorus",
+            "plugin": "Fruity Filter",
+            "parameter": "highpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "pre-chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 8,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 25,
+            "max_delta": 25,
+            "limits": {
+              "min": 0,
+              "max": 25,
+              "drum_max_percent": 25
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "bass": [
+          {
+            "name": "Lower bass volume before section change",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "verse",
+                "pre-chorus"
+              ],
+              "to": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 1,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": -3,
+            "max_delta": 3,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "effects": [
+          {
+            "name": "Brief echo before section change",
+            "plugin": "Fruity Delay 3",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "bridge",
+                "drop"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 25.5,
+            "max_delta": 25.5,
+            "limits": {
+              "min": 0,
+              "max": 25.5,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Drum & Bass": {
+    "Liquid": {
+      "baseline_intensity": "Medium",
+      "description": "Filter amount changes on chords, small left/right changes on sustained sounds, brief vocal reverb and bass volume reductions.",
+      "roles": {
+        "pads": [
+          {
+            "name": "Reduce chord filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 40,
+            "end_value": 0,
+            "max_delta": 40,
+            "limits": {
+              "min": 0,
+              "max": 40,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          },
+          {
+            "name": "Move sustained sound right, then return",
+            "plugin": "Mixer",
+            "parameter": "pan_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 8,
+            "max_delta": 8,
+            "limits": {
+              "min": -8,
+              "max": 8
+            }
+          }
+        ],
+        "keys": [
+          {
+            "name": "Reduce chord filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 40,
+            "end_value": 0,
+            "max_delta": 40,
+            "limits": {
+              "min": 0,
+              "max": 40,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "vocals": [
+          {
+            "name": "Brief vocal reverb before section change",
+            "plugin": "Fruity Reeverb 2",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus",
+                "bridge"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 24.0,
+            "max_delta": 24.0,
+            "limits": {
+              "min": 0,
+              "max": 24.0,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          }
+        ],
+        "bass": [
+          {
+            "name": "Lower bass volume before main section",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus",
+                "drop"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 1,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": -3,
+            "max_delta": 3,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ]
+      }
+    },
+    "Neurofunk": {
+      "baseline_intensity": "High",
+      "description": "Brief bass volume reductions, quick filter amount changes and short echoes around selected section boundaries.",
+      "roles": {
+        "bass": [
+          {
+            "name": "Briefly lower bass volume before main section",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "step",
+            "length": {
+              "value": 0.5,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": -7,
+            "max_delta": 7,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "synth": [
+          {
+            "name": "Quickly reduce lead filter amount at section start",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 0.25,
+              "unit": "bars"
+            },
+            "start_value": 65,
+            "end_value": 0,
+            "max_delta": 65,
+            "limits": {
+              "min": 0,
+              "max": 65,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "hat": [
+          {
+            "name": "Percussion filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 55,
+            "max_delta": 55,
+            "limits": {
+              "min": 0,
+              "max": 55,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "perc": [
+          {
+            "name": "Percussion filter amount before main section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 55,
+            "max_delta": 55,
+            "limits": {
+              "min": 0,
+              "max": 55,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "effects": [
+          {
+            "name": "Brief echo before section change",
+            "plugin": "Fruity Delay 3",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "bridge",
+                "drop"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 28.5,
+            "max_delta": 28.5,
+            "limits": {
+              "min": 0,
+              "max": 28.5,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          }
+        ]
+      }
+    },
+    "Jungle": {
+      "baseline_intensity": "Medium-High",
+      "description": "Short drum echoes, brief bass volume reductions and changes to instrument filtering and percussion volume.",
+      "roles": {
+        "snare": [
+          {
+            "name": "Brief drum echo before main section",
+            "plugin": "Fruity Delay 3",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 21.0,
+            "max_delta": 21.0,
+            "limits": {
+              "min": 0,
+              "max": 21.0,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          }
+        ],
+        "perc": [
+          {
+            "name": "Brief drum echo before main section",
+            "plugin": "Fruity Delay 3",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 21.0,
+            "max_delta": 21.0,
+            "limits": {
+              "min": 0,
+              "max": 21.0,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          }
+        ],
+        "bass": [
+          {
+            "name": "Lower bass volume before section change",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "transition",
+              "from": [
+                "verse",
+                "bridge"
+              ],
+              "to": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "step",
+            "length": {
+              "value": 1,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": -4,
+            "max_delta": 4,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "keys": [
+          {
+            "name": "Reduce instrument filter amount at section start",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 55,
+            "end_value": 20,
+            "max_delta": 55,
+            "limits": {
+              "min": 0,
+              "max": 55,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "synth": [
+          {
+            "name": "Reduce instrument filter amount at section start",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "drop",
+                "chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 55,
+            "end_value": 20,
+            "max_delta": 55,
+            "limits": {
+              "min": 0,
+              "max": 55,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "hat": [
+          {
+            "name": "Restore percussion volume before main section",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "drop"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": -1.8,
+            "end_value": 0,
+            "max_delta": 2,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Funk/Soul": {
+    "Modern Funk": {
+      "baseline_intensity": "Medium",
+      "description": "Horn volume increases toward the existing setting before choruses, brief horn reverb, reduced keyboard filtering and small guitar left/right changes.",
+      "roles": {
+        "brass": [
+          {
+            "name": "Restore horn volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": -4,
+            "end_value": 0,
+            "max_delta": 4,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          },
+          {
+            "name": "Brief horn reverb before verse or ending",
+            "plugin": "Fruity Reeverb 2",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "verse",
+                "outro"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 15.0,
+            "max_delta": 15.0,
+            "limits": {
+              "min": 0,
+              "max": 15.0,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          }
+        ],
+        "keys": [
+          {
+            "name": "Reduce keyboard filter amount during chorus",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 40,
+            "end_value": 20,
+            "max_delta": 40,
+            "limits": {
+              "min": 0,
+              "max": 40,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "guitar": [
+          {
+            "name": "Move guitar right, then return",
+            "plugin": "Mixer",
+            "parameter": "pan_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 12,
+            "max_delta": 12,
+            "limits": {
+              "min": -15,
+              "max": 15
+            }
+          }
+        ]
+      }
+    },
+    "Soul": {
+      "baseline_intensity": "Medium-Low",
+      "description": "Horn volume increases toward the existing setting before choruses, reduced piano filtering, lower guitar volume during verses and brief vocal reverb.",
+      "roles": {
+        "brass": [
+          {
+            "name": "Restore horn volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": -3,
+            "end_value": 0,
+            "max_delta": 3,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "keys": [
+          {
+            "name": "Reduce piano filter amount during chorus",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 30,
+            "end_value": 20,
+            "max_delta": 30,
+            "limits": {
+              "min": 0,
+              "max": 30,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "guitar": [
+          {
+            "name": "Lower guitar volume during verse",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": -1.8,
+            "max_delta": 2,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "vocals": [
+          {
+            "name": "Brief vocal reverb before chorus or ending",
+            "plugin": "Fruity Reeverb 2",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus",
+                "outro"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 18.0,
+            "max_delta": 18.0,
+            "limits": {
+              "min": 0,
+              "max": 18.0,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Pop": {
+    "Mainstream Pop": {
+      "baseline_intensity": "Medium",
+      "description": "Volume changes around chorus boundaries, brief vocal echoes and small left/right changes on sustained sounds.",
+      "roles": {
+        "guitar": [
+          {
+            "name": "Restore volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": -2,
+            "end_value": 0,
+            "max_delta": 2,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "keys": [
+          {
+            "name": "Restore volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": -2,
+            "end_value": 0,
+            "max_delta": 2,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "synth": [
+          {
+            "name": "Restore volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": -2,
+            "end_value": 0,
+            "max_delta": 2,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "vocals": [
+          {
+            "name": "Brief vocal echo before verse or chorus",
+            "plugin": "Fruity Delay 3",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus",
+                "verse"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 18.0,
+            "max_delta": 18.0,
+            "limits": {
+              "min": 0,
+              "max": 18.0,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          }
+        ],
+        "pads": [
+          {
+            "name": "Move sustained sound right during chorus",
+            "plugin": "Mixer",
+            "parameter": "pan_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 8,
+            "max_delta": 8,
+            "limits": {
+              "min": -8,
+              "max": 8
+            }
+          }
+        ],
+        "bass": [
+          {
+            "name": "Lower bass volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 1,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": -2.5,
+            "max_delta": 3,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ]
+      }
+    },
+    "Synth-pop": {
+      "baseline_intensity": "Medium",
+      "description": "Reduced synthesizer filtering before choruses, small left/right changes on sustained sounds, brief bass volume reductions and vocal echoes.",
+      "roles": {
+        "synth": [
+          {
+            "name": "Reduce synthesizer filter amount before chorus",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 55,
+            "end_value": 0,
+            "max_delta": 55,
+            "limits": {
+              "min": 0,
+              "max": 55,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "keys": [
+          {
+            "name": "Reduce synthesizer filter amount before chorus",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 55,
+            "end_value": 0,
+            "max_delta": 55,
+            "limits": {
+              "min": 0,
+              "max": 55,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "pads": [
+          {
+            "name": "Move sustained sound right during chorus",
+            "plugin": "Mixer",
+            "parameter": "pan_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 8,
+            "max_delta": 8,
+            "limits": {
+              "min": -8,
+              "max": 8
+            }
+          }
+        ],
+        "bass": [
+          {
+            "name": "Lower synthesizer bass volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 1,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": -3,
+            "max_delta": 3,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "vocals": [
+          {
+            "name": "Brief vocal echo before section change",
+            "plugin": "Fruity Delay 3",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus",
+                "bridge"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 24.0,
+            "max_delta": 24.0,
+            "limits": {
+              "min": 0,
+              "max": 24.0,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "R&B": {
+    "Modern R&B": {
+      "baseline_intensity": "Medium-Low",
+      "description": "Instrument filtering during verses, brief vocal reverb, bass volume reductions and small guitar left/right changes.",
+      "roles": {
+        "keys": [
+          {
+            "name": "Instrument filter amount during verse",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse"
+              ]
+            },
+            "shape": "hold",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 30,
+            "end_value": 30,
+            "max_delta": 30,
+            "limits": {
+              "min": 0,
+              "max": 30,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "pads": [
+          {
+            "name": "Instrument filter amount during verse",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse"
+              ]
+            },
+            "shape": "hold",
+            "length": {
+              "value": 4,
+              "unit": "bars"
+            },
+            "start_value": 30,
+            "end_value": 30,
+            "max_delta": 30,
+            "limits": {
+              "min": 0,
+              "max": 30,
+              "drum_max_percent": 40
+            },
+            "release": {
+              "value": 0.5,
+              "unit": "beats"
+            }
+          }
+        ],
+        "vocals": [
+          {
+            "name": "Brief vocal reverb before section change",
+            "plugin": "Fruity Reeverb 2",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus",
+                "bridge"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 25.5,
+            "max_delta": 25.5,
+            "limits": {
+              "min": 0,
+              "max": 25.5,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          }
+        ],
+        "bass": [
+          {
+            "name": "Lower bass volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_down",
+            "length": {
+              "value": 1,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": -2.5,
+            "max_delta": 3,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "guitar": [
+          {
+            "name": "Move guitar right during chorus, then return",
+            "plugin": "Mixer",
+            "parameter": "pan_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 8,
+            "max_delta": 8,
+            "limits": {
+              "min": -8,
+              "max": 8
+            }
+          }
+        ]
+      }
+    },
+    "Neo-Soul": {
+      "baseline_intensity": "Low",
+      "description": "Piano and horn volume increases toward their existing settings before choruses, brief guitar filtering and vocal reverb.",
+      "roles": {
+        "keys": [
+          {
+            "name": "Restore electric piano volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": -1.8,
+            "end_value": 0,
+            "max_delta": 2,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "brass": [
+          {
+            "name": "Restore horn volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": -2.5,
+            "end_value": 0,
+            "max_delta": 3,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "guitar": [
+          {
+            "name": "Guitar filter amount during middle section",
+            "plugin": "Fruity Filter",
+            "parameter": "lowpass_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "bridge"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 20,
+            "max_delta": 20,
+            "limits": {
+              "min": 0,
+              "max": 20
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          }
+        ],
+        "vocals": [
+          {
+            "name": "Brief vocal reverb before chorus or ending",
+            "plugin": "Fruity Reeverb 2",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus",
+                "outro"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 12.0,
+            "max_delta": 12.0,
+            "limits": {
+              "min": 0,
+              "max": 12.0,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Rock": {
+    "Alt Rock": {
+      "baseline_intensity": "Medium-Low",
+      "description": "Instrument volume changes between sections, with brief vocal reverb before choruses and the ending.",
+      "roles": {
+        "guitar": [
+          {
+            "name": "Restore guitar volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": -2.5,
+            "end_value": 0,
+            "max_delta": 3,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "bass": [
+          {
+            "name": "Lower bass volume during verse",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "verse"
+              ]
+            },
+            "shape": "step",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": -1,
+            "max_delta": 1,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "keys": [
+          {
+            "name": "Raise instrument volume in middle section, then return",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "bridge"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 1.2,
+            "max_delta": 1.5,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "pads": [
+          {
+            "name": "Raise instrument volume in middle section, then return",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "bridge"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 2,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 1.2,
+            "max_delta": 1.5,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "vocals": [
+          {
+            "name": "Brief vocal reverb before chorus or ending",
+            "plugin": "Fruity Reeverb 2",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus",
+                "outro"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": 0.0,
+            "end_value": 10.5,
+            "max_delta": 12,
+            "limits": {
+              "min": 0,
+              "max": 12,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 2,
+              "unit": "beats"
+            }
+          }
+        ]
+      }
+    },
+    "Pop Punk": {
+      "baseline_intensity": "Medium",
+      "description": "Quick guitar volume increases toward the existing setting, brief bass volume reductions, increased vocal volume and short vocal echoes.",
+      "roles": {
+        "guitar": [
+          {
+            "name": "Quickly restore guitar volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 0.5,
+              "unit": "bars"
+            },
+            "start_value": -2,
+            "end_value": 0,
+            "max_delta": 2,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "bass": [
+          {
+            "name": "Briefly lower bass volume before chorus",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "step",
+            "length": {
+              "value": 0.5,
+              "unit": "beats"
+            },
+            "start_value": 0,
+            "end_value": -1.8,
+            "max_delta": 2,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          }
+        ],
+        "vocals": [
+          {
+            "name": "Raise vocal volume at chorus start",
+            "plugin": "Mixer",
+            "parameter": "volume_db",
+            "units": "dB",
+            "trigger": {
+              "type": "section",
+              "sections": [
+                "chorus"
+              ]
+            },
+            "shape": "ramp_up",
+            "length": {
+              "value": 1,
+              "unit": "bars"
+            },
+            "start_value": 0,
+            "end_value": 1,
+            "max_delta": 1,
+            "limits": {
+              "min": -12,
+              "max": 3
+            }
+          },
+          {
+            "name": "Brief vocal echo before middle section or ending",
+            "plugin": "Fruity Delay 3",
+            "parameter": "effect_blend_percent",
+            "units": "%",
+            "trigger": {
+              "type": "last_bar",
+              "sections": [
+                "bridge",
+                "outro"
+              ]
+            },
+            "shape": "swell",
+            "length": {
+              "value": 0.5,
+              "unit": "beats"
+            },
+            "start_value": 0.0,
+            "end_value": 9.0,
+            "max_delta": 12,
+            "limits": {
+              "min": 0,
+              "max": 12,
+              "drum_max_percent": 30
+            },
+            "release": {
+              "value": 1,
+              "unit": "beats"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

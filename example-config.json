@@ -1,0 +1,15 @@
+{
+  "source": "C:/Music/My Song/stems.flp",
+  "output": "C:/Music/My Song/stems - automated.flp",
+  "midi": "",
+  "original": "",
+  "eq_calibration": "",
+  "section_template": "",
+  "modules": {"volume": true, "section": false, "eq": false},
+  "volume_intensity": "Medium",
+  "max_cut_db": 1.5,
+  "seed": 150,
+  "section_enabled": {"filter": false, "delay": false, "reverb": false, "width": false, "pan": true},
+  "section_intensities": {},
+  "reverb_mode": "baked"
+}

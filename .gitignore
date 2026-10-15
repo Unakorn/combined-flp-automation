@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+build/
+dist/
+.test-tmp/
+resources/local-plugin-template.json
+*.flp
+*.wav
+*.mid
+*.midi
+*-report.json

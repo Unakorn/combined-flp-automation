@@ -1,0 +1,370 @@
+{
+  "version": 1,
+  "description": "Dedicated Image-Line stock-effect instances for native cutoff and mixer-slot Mix automation. Plugin states are exact factory records; no musical material or third-party plugin state is packaged.",
+  "semantics": {
+    "neutral": "Blend effects initialize slot Mix at zero. Native low-pass cutoff initializes fully open at knob 100%, with slot Mix 100% and no resonance.",
+    "full_blend": "Mix 100% selects the effect output including any dry signal inside the preset; it does not guarantee 100% internally wet.",
+    "filter": "lowpass_cutoff_percent moves the real cutoff knob at native parameter offset 0x8000. Values are knob position, not Hz. Legacy lowpass_blend_percent and highpass_blend_percent crossfade into fixed resonant factory sounds.",
+    "state_preservation": "Only the wrapper destination and visible-editor bit change during cloning. The event 213 bytes remain exact.",
+    "validation": "Binary layout and native factory examples were inspected. Loading and listening in FL Studio have not been verified for generated output."
+  },
+  "documentation": [
+    "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/mixer_plugin.htm",
+    "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Filter.htm",
+    "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Delay%203.htm",
+    "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Reeverb%202.htm"
+  ],
+  "native_mix_examples": [
+    {
+      "source": "Demo projects/NewStuff.flp",
+      "source_sha256": "9bd28ac62041297f973c1570df77e9b97fe9ca0b71ab458ef4d24b0ec6354a45",
+      "source_fl_version": "25.2.3.5164",
+      "target_hex": "0x71031f01",
+      "native_link_words": [
+        [
+          1638400,
+          0,
+          1896029953,
+          8,
+          469
+        ]
+      ],
+      "saved_mix_values": [
+        0
+      ]
+    },
+    {
+      "source": "Demo projects/Demo songs/Cuebur & Thandi Draai - Africa's Calling.flp",
+      "source_sha256": "37d3e05a808bc56975fa4751d65813c45429dec5b7998f21928ff0953066b183",
+      "source_fl_version": "25.2.0.5098",
+      "target_hex": "0x79401f01",
+      "native_link_words": [
+        [
+          2949120,
+          0,
+          2034245377,
+          8,
+          469
+        ],
+        [
+          3080192,
+          0,
+          2034245377,
+          8,
+          469
+        ],
+        [
+          3145728,
+          0,
+          2034245377,
+          8,
+          469
+        ]
+      ],
+      "saved_mix_values": [
+        0
+      ]
+    }
+  ],
+  "effects": {
+    "filter_lowpass": {
+      "key": "filter_lowpass",
+      "plugin": "Fruity Filter",
+      "parameter": "lowpass_blend_percent",
+      "name": "Low-pass preset blend",
+      "description": "Exact factory Party next door preset. Blend into a fixed low-pass coloration; no moving cutoff or numerical Hz claim.",
+      "control": "mixer_slot_mix",
+      "units": "effect blend %",
+      "initial_mix_raw": 0,
+      "initial_enabled_raw": 1,
+      "raw_mix_range": [
+        0,
+        12800
+      ],
+      "normalized_mix_range": [
+        0,
+        1
+      ],
+      "state_size": 29,
+      "state_sha256": "65e19564d37d40274eaa91a1a704632b43d3b33c087d6ff83a519ac2698f52fe",
+      "events": [
+        [
+          201,
+          "4600720075006900740079002000460069006c007400650072000000"
+        ],
+        [
+          212,
+          "000000000000000002000000000000004101000000000000000000000000000000000000ae01000082000000f401000069000000"
+        ],
+        [
+          155,
+          "00000000"
+        ],
+        [
+          128,
+          "48515600"
+        ],
+        [
+          213,
+          "02000000a0000000000400006003000000000000000000000000000001"
+        ]
+      ],
+      "provenance": {
+        "vendor": "Image-Line",
+        "installation": "FL Studio 2026",
+        "source": "Patches/Plugin presets/Effects/Fruity Filter/Party next door.fst",
+        "source_fl_version": "20.5.0.1099",
+        "source_sha256": "f420ec5725a4171481ff38c10405f4aa033bc21c27161aca6d29d456349174d9",
+        "state_modified": false
+      },
+      "target_offset": 7937,
+      "baseline_normalized": 0.0
+    },
+    "filter_highpass": {
+      "key": "filter_highpass",
+      "plugin": "Fruity Filter",
+      "parameter": "highpass_blend_percent",
+      "name": "High-pass preset blend",
+      "description": "Exact factory Retro sound preset. Blend into fixed high-pass coloration; no moving cutoff or numerical Hz claim.",
+      "control": "mixer_slot_mix",
+      "units": "effect blend %",
+      "initial_mix_raw": 0,
+      "initial_enabled_raw": 1,
+      "raw_mix_range": [
+        0,
+        12800
+      ],
+      "normalized_mix_range": [
+        0,
+        1
+      ],
+      "state_size": 29,
+      "state_sha256": "16476ddc057c5b9ba195482be420c1a61b11dcbd6f6932200d97adef9515abdd",
+      "events": [
+        [
+          201,
+          "4600720075006900740079002000460069006c007400650072000000"
+        ],
+        [
+          212,
+          "000000000000000002000000000000004101000000000000000000000000000000000000ae01000082000000f401000069000000"
+        ],
+        [
+          155,
+          "00000000"
+        ],
+        [
+          128,
+          "48515600"
+        ],
+        [
+          213,
+          "02000000e0010000000400000000000000000000000400000100000001"
+        ]
+      ],
+      "provenance": {
+        "vendor": "Image-Line",
+        "installation": "FL Studio 2026",
+        "source": "Patches/Plugin presets/Effects/Fruity Filter/Retro sound.fst",
+        "source_fl_version": "20.5.0.1099",
+        "source_sha256": "8f4f511c3fcead0e243a7dd75b40f0532ede10adc1dd9d78db6308a786c7bba7",
+        "state_modified": false
+      },
+      "target_offset": 7937,
+      "baseline_normalized": 0.0
+    },
+    "delay": {
+      "key": "delay",
+      "plugin": "Fruity Delay 3",
+      "parameter": "effect_blend_percent",
+      "name": "Ping-pong delay blend",
+      "description": "Exact factory Ping pong preset, with its own native timing, feedback and internal balance untouched.",
+      "control": "mixer_slot_mix",
+      "units": "effect blend %",
+      "initial_mix_raw": 0,
+      "initial_enabled_raw": 1,
+      "raw_mix_range": [
+        0,
+        12800
+      ],
+      "normalized_mix_range": [
+        0,
+        1
+      ],
+      "state_size": 108,
+      "state_sha256": "898d0d93789d2c9ce880cd6f4cc684debe8f83aa00eac12b19302e923d3536f4",
+      "events": [
+        [
+          201,
+          "4600720075006900740079002000440065006c0061007900200033000000"
+        ],
+        [
+          212,
+          "01000000000000000200000000000000410100000000000000000000000000000000000013010000f9000000eb020000d9000000"
+        ],
+        [
+          155,
+          "00000000"
+        ],
+        [
+          128,
+          "48515600"
+        ],
+        [
+          213,
+          "01000000701700000200000001000000010000006000000000000000f4010000701700003d0800001b07000000000000000000000000000001000000b80b00000000000004120000cf0300008e010000000000000000000060ea000070170000701700000000000070170000"
+        ]
+      ],
+      "provenance": {
+        "vendor": "Image-Line",
+        "installation": "FL Studio 2026",
+        "source": "Patches/Plugin presets/Effects/Fruity Delay 3/Ping pong.fst",
+        "source_fl_version": "12.5.0.45",
+        "source_sha256": "88fe83af6aeb559c795c4c59695bb0006b3de48fa5bda232246749c0aa324791",
+        "state_modified": false
+      },
+      "target_offset": 7937,
+      "baseline_normalized": 0.0
+    },
+    "reverb": {
+      "key": "reverb",
+      "plugin": "Fruity Reeverb 2",
+      "parameter": "effect_blend_percent",
+      "name": "Reverb blend",
+      "description": "Exact modern Reeverb 2 instance from insert 18 slot 0 of the factory Minimal/Delay and reverb template. Its internal balance and decay stay untouched.",
+      "control": "mixer_slot_mix",
+      "units": "effect blend %",
+      "initial_mix_raw": 0,
+      "initial_enabled_raw": 1,
+      "raw_mix_range": [
+        0,
+        12800
+      ],
+      "normalized_mix_range": [
+        0,
+        1
+      ],
+      "state_size": 66,
+      "state_sha256": "6d0f14a53a11c240d88b4cad4687c13f5d6b36dcde4c9a668e7db649df552b9d",
+      "events": [
+        [
+          201,
+          "46007200750069007400790020005200650065007600650072006200200032000000"
+        ],
+        [
+          212,
+          "1200000000000000020000000000000040010000000000000000000000000000000000001d000000ae0100000000000000000000"
+        ],
+        [
+          155,
+          "00000000"
+        ],
+        [
+          128,
+          "48515600"
+        ],
+        [
+          41,
+          "00"
+        ],
+        [
+          213,
+          "1127000031010000280000000000000045000000640000000f0000002800000064000000f4010000f7ffffff000000008000000080000000ac0200009f0400000000"
+        ]
+      ],
+      "provenance": {
+        "vendor": "Image-Line",
+        "installation": "FL Studio 2026",
+        "source": "Templates/Minimal/Delay and reverb/Delay and reverb.flp",
+        "source_fl_version": "24.2.99.4720",
+        "source_sha256": "fc28b645c582784b617a108f2c5412a33127268ddaee8761a5368abecb42d8a5",
+        "state_modified": false
+      },
+      "target_offset": 7937,
+      "baseline_normalized": 0.0
+    },
+    "filter_lowpass_cutoff": {
+      "key": "filter_lowpass_cutoff",
+      "plugin": "Fruity Filter",
+      "parameter": "lowpass_cutoff_percent",
+      "name": "Low-pass cutoff",
+      "description": "A real native Fruity Filter cutoff sweep. Values are cutoff-knob position percent, not Hz. The exact saved state starts fully open with no resonance and full low-pass output.",
+      "control": "plugin_parameter",
+      "target_offset": 32768,
+      "baseline_normalized": 1.0,
+      "initial_parameter_raw": 1024,
+      "initial_mix_raw": 12800,
+      "initial_enabled_raw": 1,
+      "units": "cutoff knob %",
+      "raw_parameter_range": [
+        0,
+        1024
+      ],
+      "normalized_parameter_range": [
+        0,
+        1
+      ],
+      "raw_mix_range": [
+        0,
+        12800
+      ],
+      "normalized_mix_range": [
+        0,
+        1
+      ],
+      "state_size": 29,
+      "state_sha256": "8d07de11bdbc1c941d425a27d09ac6c25af302ba71ed5330b4beab282e12b199",
+      "events": [
+        [
+          201,
+          "4600720075006900740079002000460069006c007400650072000000"
+        ],
+        [
+          212,
+          "06000000010000000200000000000000400100000000000000000000000000000000000013050000b2010000f401000069000000"
+        ],
+        [
+          155,
+          "00000000"
+        ],
+        [
+          128,
+          "48515600"
+        ],
+        [
+          41,
+          "00"
+        ],
+        [
+          213,
+          "0200000000040000000000000004000000000000000000000000000001"
+        ]
+      ],
+      "provenance": {
+        "vendor": "Image-Line",
+        "installation": "FL Studio 2026",
+        "source": "Demo projects/Demo songs/Edlan & Ella Noël - Song For You.flp",
+        "source_fl_version": "25.1.2.4893",
+        "source_sha256": "b37243d9e512e9978df12a18efabe0b5114d53478291f5e739505e469277a119",
+        "source_insert": 6,
+        "source_slot": 1,
+        "state_modified": false,
+        "repository_reference": "work/drum_template.py:OPEN_FILTER and work/flp_connector.py cutoff insertion",
+        "native_parameter_evidence": {
+          "target_hex": "0x71818000",
+          "native_link_words": [
+            2621440,
+            0,
+            1904312320,
+            8,
+            469
+          ],
+          "source_channel_id": 40,
+          "source_channel_name": "Filter - Synpluck Square - Cutoff frequency",
+          "saved_slot_enabled": 1,
+          "saved_slot_mix": 12800
+        }
+      }
+    }
+  }
+}
