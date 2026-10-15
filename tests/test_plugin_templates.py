@@ -302,21 +302,28 @@ class PluginTemplateTests(unittest.TestCase):
         calibration_fixture(self.source)
         before = self.source.read_bytes()
         existing = json.dumps(dict(version=1, families={})).encode()
-        self.output.write_bytes(existing)
         original_read = Path.read_bytes
-        calls = 0
-        def changed(path):
-            nonlocal calls
-            value = original_read(path)
-            if path == self.source:
-                calls += 1
-                if calls >= 2:
-                    return value+b' changed while reading'
-            return value
-        with patch.object(Path, 'read_bytes', changed), self.assertRaisesRegex(ValueError, 'changed while importing'):
-            import_template(self.source, self.output)
-        self.assertEqual(self.source.read_bytes(), before)
-        self.assertEqual(self.output.read_bytes(), existing)
+        source_identity = self.source.resolve()
+        # Windows temp directories may use an 8.3 alias while read_project
+        # resolves the full path. Exercise a lexical alias on every machine.
+        alias = self.root / '..' / self.root.name / self.source.name
+        for input_path in (self.source, alias):
+            with self.subTest(input_path=input_path):
+                self.output.write_bytes(existing)
+                calls = 0
+                def changed(path):
+                    nonlocal calls
+                    value = original_read(path)
+                    if path.resolve() == source_identity:
+                        calls += 1
+                        if calls >= 2:
+                            return value+b' changed while reading'
+                    return value
+                with patch.object(Path, 'read_bytes', changed), self.assertRaisesRegex(ValueError, 'changed while importing'):
+                    import_template(input_path, self.output)
+                self.assertGreaterEqual(calls, 2, 'The test must intercept the preservation re-read.')
+                self.assertEqual(self.source.read_bytes(), before)
+                self.assertEqual(self.output.read_bytes(), existing)
 
     def test_integrity_and_real_plugin_offset_required_on_reload(self):
         for field, bad in [('target_offset', 0x1f01), ('state_sha256', '0'*64)]:
